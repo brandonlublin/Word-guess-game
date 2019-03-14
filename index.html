@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' type='text/css' href='Assets/css/reset.css'>
+        <link rel='stylesheet' type='text/css' href='Assets/css/style.css'>
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Kreon" rel="stylesheet">
+        <title>Word Guess Game</title>
+    </head>
+    <body>
+        <header>
+            <img class='logo' src="Assets/images/Snowboard_icon.png" alt="snowboard logo">
+            <h1 class='hangmanHeader'>Word Guess</h1>
+            <img class='background' src='Assets/images/background.png'>
+        </header>
+        <br><br><br><br><br><br>
+        <div class='centerContent'>
+            <div class='row'>
+                <div class='columns'>
+                    <h1><canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas></h1>
+                    <img>
+                </div>
+                <div class='columns'>
+                    <h1 class='starterButton'>Press any key to begin playing</h1>
+                    <br>
+                    <img>
+                    <h4>Wins: <span id='winCount'></span></h4>
+                    <br>
+                    <h3>Current Word: </h3>
+                    <br>
+                    <p id='word'></p>
+                    <br><br>
+                    <h4>Chances Remaining: <br><span id='guessesLeft'></span></h4>
+                    <br>
+                    <h4>Letter Options: <br><div id='letterButtons'></div></h4>
+                </div>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="/Assets/javascript/game.js"></script>
+    
+    </body>
+
+</html>

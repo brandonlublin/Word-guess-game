@@ -1,0 +1,88 @@
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+}
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    position: relative;
+}
+.hangmanHeader {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 70px;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 49.5%;
+    font-family: 'Permanent Marker', cursive;
+    color:  #4688f1;
+    transform: rotate(-13deg);
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+.centerContent {
+    margin-left: 30%;
+}
+.columns {
+    box-sizing: border-box;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    border: 3px dotted #4688f1;
+    font-family: 'Kreon', serif;
+    line-height: 30px;
+    overflow: hidden;
+    height: 600px;
+    text-shadow:
+        -0.5px -0.5px 0 #4688f1,
+        0.5px -0.5px 0 #4688f1,
+        -0.5px 0.5px 0 #4688f1,
+        0.5px 0.5px 0 #4688f1;
+    color: #000000;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    justify-content: center;
+}
+button {
+    background-color: #4688f1;
+    font-family: 'Kreon', serif;
+    font-size: 20px;
+    transition-duration: 0.4s;
+}
+button:hover {
+    background-color: yellow;
+    color: #000;
+    font-family: 'Kreon', serif;
+}
+button:focus.right {
+    background-color: #242F9B;
+    color: yellow;
+    font-family: 'Kreon', serif;
+}
+button:focus.wrong {
+    background-color: #242F9B;
+    color: red;
+    font-family: 'Kreon', serif;
+}
+#lettersGuessedDiv {
+    float: left;
+    overflow: hidden;
+    word-wrap: break-word;
+}
