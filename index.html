@@ -14,16 +14,20 @@
         </header>
         <br><br><br><br><br><br>
         <div class='centerContent'>
+            
             <div class='row'>
                 <div class='columns'>
                     <h1>Hint:</h1>
-                    <img class='randomImage'>
+                    <div id="hint"></div>
                 </div>
                 <div class='columns'>
                     <h1 class='starterButton'>Press any key to begin playing</h1>
+                    <p id="alert"></p>
                     <br>
                     <img>
                     <h4>Wins: <span id='winCount'></span></h4>
+                    <br>
+                    <h4>Losses: <span id='lossCount'></span></h4>
                     <br>
                     <h3>Current Word: </h3>
                     <br>
@@ -31,10 +35,14 @@
                     <br><br>
                     <h4>Chances Remaining: <br><span id='guessesLeft'></span></h4>
                     <br>
+                    <br>
+                    <h4>Current Letters Guessed: <br><span id='guessesSoFar'></span></h4>
+                    <br>
                     <h4>Letter Options: <br><div id='letterButtons'></div></h4>
                 </div>
             </div>
         </div>
+        
         <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
         <script src="assets/javascript/game.js"></script>
     
