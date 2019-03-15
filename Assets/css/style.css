@@ -4,6 +4,7 @@
     top: 0;
     width: 100%;
     height: auto;
+    height: auto;
     opacity: 0.2;
 }
 .logo {
@@ -63,7 +64,7 @@
 button {
     background-color: #4688f1;
     font-family: 'Kreon', serif;
-    font-size: 20px;
+    font-size: 22px;
     transition-duration: 0.4s;
 }
 button:hover {
@@ -85,4 +86,10 @@ button:focus.wrong {
     float: left;
     overflow: hidden;
     word-wrap: break-word;
+}
+canvas {
+    color:white;
+    border: white dashed 2px;
+    padding:15px;
+    width: 100%;
 }
