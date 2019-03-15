@@ -3,8 +3,8 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: auto;
-    height: auto;
+    height: 150%;
+    z-index: -5;
     opacity: 0.2;
 }
 .logo {
@@ -82,6 +82,11 @@ button:focus.wrong {
     color: red;
     font-family: 'Kreon', serif;
 }
+button:active {
+    background-color: #242F9B;
+    color: yellow;
+    font-family: 'Kreon', serif;
+}
 #lettersGuessedDiv {
     float: left;
     overflow: hidden;
@@ -92,4 +97,48 @@ canvas {
     border: white dashed 2px;
     padding:15px;
     width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+    .hangmanHeader {
+        font-size: 60px;
+    }
+    .columns {
+        width: 350px;
+    }
+    .centerContent {
+        margin-left: 27%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .hangmanHeader {
+        font-size: 50px;
+    }
+    .columns {
+        width: 300px;
+    }
+    .centerContent {
+        margin-left: 20%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .hangmanHeader {
+        font-size: 45px;
+        top: 40px;
+    }
+    .columns {
+        width: 300px;
+        margin: auto;
+        left: 10%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .hangmanHeader {
+        font-size: 35px;
+        top: 40px;
+    }
+    .columns {
+        width: 250px;
+        margin: auto;
+        left: 10%;
+    }
 }

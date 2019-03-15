@@ -1,17 +1,22 @@
-var words = [
-  'snowboard',
-  'skiing',
-  'trees',
-  'chairlift',
-  'snow',
-  'cold', 'alpine', 'mountains'
-];
+var words = ['snowboard', 'skiing', 'trees', 'chairlift', 'snowflake', 'cold',  'alpine', 'mountains'];
 //list of letters that have already been guessed 
 var lettersGuessedArray = [];
 
 //chooses random word from words list
 var word = words[Math.floor(Math.random() * words.length)];
-  console.log(word);
+console.log(word);
+function chooseImageForWord() {
+  
+  if (word == 'snowboard') {
+    let targetImg = document.createElement('IMG');
+    targetImg.setAttribute('src', '/Assets/images/snowboardword.png');
+    targetImg.setAttribute('width', '300px');
+    targetImg.setAttribute('height', '300px');
+    console.log('its working');
+  }
+  
+}
+chooseImageForWord();
 var wordArr = word.split('');
 var wins = 0;
 var losses = 0;
@@ -129,7 +134,10 @@ document.onkeyup = function (event) {
 // }
 lettersGuessedArray.array = document.getElementsByClassName('lettersGuessedArray');
 
+//Change Hint image based off word
+function changeImage() {
 
+}
 
 //determine if letter has been pressed yet
 }
