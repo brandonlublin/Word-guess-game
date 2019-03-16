@@ -1,7 +1,7 @@
 var gameData = {
   wins: 0,
   losses: 0,
-  totalChances: 15,
+  totalChances: 6,
   usersIncorrectGuesses: [],
   selectedWord: selectRandomWord(),
   dashArray: []
@@ -43,7 +43,6 @@ function displayGameData(){
 
 displayGameData();
 
-console.log(gameData.selectedWord)
 
 // on keyb press validate key is a letter 
 document.onkeyup = function (event) {
@@ -119,7 +118,7 @@ function handleIncorrectGuess(letter){
 
 // start game over redisplay game data 
 function resetGame(){
-  gameData.totalChances = 15;
+  gameData.totalChances = 6;
   gameData.usersIncorrectGuesses = []
   gameData.selectedWord =  selectRandomWord()
   gameData.dashArray = []
@@ -127,6 +126,5 @@ function resetGame(){
   formatWordToDashes();
   displayGameData();
 
-  console.log(gameData.selectedWord)
 
 }
